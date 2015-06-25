@@ -8,7 +8,7 @@ RUN \
   openjdk-8-jdk \
   wget
 
-ENV NEO4J_VERSION 2.2.2
+ENV NEO4J_VERSION 2.2.3
 
 RUN \
   cd /tmp && \
