@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.9.17
+FROM phusion/baseimage:0.9.18
 
 MAINTAINER Andy Grant <andy.a.grant@gmail.com>
 
@@ -8,7 +8,7 @@ RUN \
   openjdk-8-jdk \
   wget
 
-ENV NEO4J_VERSION 2.3.0
+ENV NEO4J_VERSION 2.3.1
 
 RUN \
   cd /tmp && \
