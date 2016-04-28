@@ -1,0 +1,17 @@
+version: '2'
+services:
+  neo4j:
+    image: graanjonlo/neo4j:3.0.0
+    ports:
+     - "1337:1337"
+     - "7473:7473"
+     - "7474:7474"
+    expose:
+     - "1337"
+     - "7473"
+     - "7474"
+    volumes:
+     - "/home/andy/docker/data/neo4j:/data"
+     - "/home/andy/docker/logs/neo4j:/neo4j/logs"
+    environment:
+     - PAGECACHE=1g

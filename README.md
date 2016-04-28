@@ -10,9 +10,4 @@ Neo4j was developed by Neo Technology, Inc., based in the San Francisco Bay Area
 
 # How to use this image
 
-## start a neo4j instance
-
-    docker run --name neo4j [-p 1337:1337 -p 7474:7474] [-v /some/directory:/data] -d graanjonlo/neo4j[:tag]
-
-This image includes `EXPOSE 1337` and `7474`, so standard container linking will make it automatically available to the linked containers. It also includes `VOLUME ["/data"]` so you can mount a data volume.
-
+See the supporting docker-compose.yml for an example configuration.
