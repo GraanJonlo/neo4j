@@ -2,5 +2,5 @@
 src = "neo4j.conf.tmpl"
 dest = "/neo4j/conf/neo4j.conf"
 keys = [
-    "PAGECACHE",
+    "PAGECACHE_SIZE",
 ]

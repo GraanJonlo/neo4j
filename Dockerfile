@@ -36,8 +36,9 @@ ADD neo4j.sh /etc/service/neo4j/run
 
 ADD neo4j.toml /etc/confd/conf.d/neo4j.toml
 ADD neo4j.conf.tmpl /etc/confd/templates/neo4j.conf.tmpl
-ADD neo4j-wrapper.conf /neo4j/conf/neo4j-wrapper.conf
+ADD neo4j-wrapper.toml /etc/confd/conf.d/neo4j-wrapper.toml
+ADD neo4j-wrapper.conf.tmpl /etc/confd/templates/neo4j-wrapper.conf.tmpl
 
-EXPOSE 1337 7473 7474
+EXPOSE 1337 7473 7474 7687
 
 CMD ["/sbin/my_init", "--quiet"]

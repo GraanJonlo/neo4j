@@ -6,12 +6,16 @@ services:
      - "1337:1337"
      - "7473:7473"
      - "7474:7474"
+     - "7687:7687"
     expose:
      - "1337"
      - "7473"
      - "7474"
+     - "7687"
     volumes:
      - "/home/andy/docker/data/neo4j:/data"
      - "/home/andy/docker/logs/neo4j:/neo4j/logs"
     environment:
-     - PAGECACHE=1g
+     - HEAP_INITIAL_SIZE=512
+     - HEAP_MAX_SIZE=512
+     - PAGECACHE_SIZE=1g

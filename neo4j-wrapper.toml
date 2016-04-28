@@ -1,0 +1,7 @@
+[template]
+src = "neo4j-wrapper.conf.tmpl"
+dest = "/neo4j/conf/neo4j-wrapper.conf"
+keys = [
+    "HEAP_INITIAL_SIZE",
+    "HEAP_MAX_SIZE",
+]
