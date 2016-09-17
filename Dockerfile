@@ -15,7 +15,7 @@ RUN \
 
 RUN rm -rf /var/lib/apt/lists/*
 
-ENV NEO4J_VERSION 3.0.4
+ENV NEO4J_VERSION 3.0.5
 
 RUN \
   cd /tmp && \
